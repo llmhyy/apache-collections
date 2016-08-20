@@ -45,10 +45,10 @@ public class TestMultiHashMap extends AbstractTestMap {
         return new TestSuite(TestMultiHashMap.class);
     }
 
-    public static void main(String args[]) {
-        String[] testCaseName = { TestMultiHashMap.class.getName()};
-        junit.textui.TestRunner.main(testCaseName);
-    }
+//    public static void main(String args[]) {
+//        String[] testCaseName = { TestMultiHashMap.class.getName()};
+//        junit.textui.TestRunner.main(testCaseName);
+//    }
 
     // MutltiHashMap was introduced in Collections 2.x
     public String getCompatibilityVersion() {
@@ -472,4 +472,8 @@ public class TestMultiHashMap extends AbstractTestMap {
         assertEquals(new MultiHashMap(), map);
     }
 
+    public static void main(String[] args){
+    	TestMultiHashMap test = new TestMultiHashMap("test");
+    	test.testTotalSize();
+    }
 }
