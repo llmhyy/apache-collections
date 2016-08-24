@@ -48,10 +48,10 @@ public class TestPredicatedSortedSet extends AbstractTestSortedSet{
         return BulkTest.makeSuite(TestPredicatedSortedSet.class);
     }
     
-    public static void main(String args[]) {
-        String[] testCaseName = { TestPredicatedSortedMap.class.getName()};
-        junit.textui.TestRunner.main(testCaseName);
-    }
+//    public static void main(String args[]) {
+//        String[] testCaseName = { TestPredicatedSortedMap.class.getName()};
+//        junit.textui.TestRunner.main(testCaseName);
+//    }
     
  //-------------------------------------------------------------------    
     
@@ -140,4 +140,8 @@ public class TestPredicatedSortedSet extends AbstractTestSortedSet{
 //        writeExternalFormToDisk((java.io.Serializable) collection, "D:/dev/collections/data/test/PredicatedSortedSet.fullCollection.version3.1.obj");
 //    }
 
+    public static void main(String[] args){
+    	TestPredicatedSortedSet test = new TestPredicatedSortedSet("test");
+    	test.testComparator();
+    }
 }
